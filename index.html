@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#040406">
+  <meta name="description" content="Official Privacy Policy for ChillHub Android Music Player developed by Saavej Choudhary (DNS Creations).">
+  <title>Privacy Policy — ChillHub Music Player</title>
+  <style>
+    :root {
+      --bg-glossy: #040406;
+      --bg-obsidian: #0C0C10;
+      --surface-glass: rgba(20, 20, 26, 0.72);
+      --surface-glass-strong: rgba(25, 25, 34, 0.86);
+      --surface-crimson-tint: rgba(79, 6, 19, 0.34);
+      --crimson-primary: #EF4444;
+      --crimson-glow: #E5192C;
+      --crimson-deep: #D90429;
+      --crimson-blood: #9B0018;
+      --border-glass: rgba(255, 255, 255, 0.11);
+      --border-crimson: rgba(239, 68, 68, 0.34);
+      --text-primary: #F6F6F8;
+      --text-secondary: #B3B3BE;
+      --text-muted: #8A8A98;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --radius-sm: 12px;
+      --shadow-card: 0 18px 46px rgba(0, 0, 0, 0.62), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      --shadow-crimson: 0 10px 30px rgba(217, 4, 41, 0.24);
+      --max-width: 1060px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-glossy);
+      color-scheme: dark;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.68;
+      color: var(--text-primary);
+      background-color: var(--bg-glossy);
+      background-image:
+        radial-gradient(ellipse 75% 42% at 15% -6%, rgba(217, 4, 41, 0.20), transparent 65%),
+        radial-gradient(ellipse 65% 38% at 88% 8%, rgba(155, 0, 24, 0.18), transparent 60%),
+        radial-gradient(ellipse 70% 45% at 50% 100%, rgba(122, 4, 24, 0.14), transparent 70%);
+      background-attachment: fixed;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: #FF6B6B;
+      text-decoration: none;
+      transition: color 0.2s ease, opacity 0.2s ease;
+    }
+
+    a:hover, a:focus-visible {
+      color: #FF9494;
+      text-decoration: underline;
+      outline: none;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 0.86em;
+      color: #FCA5A5;
+      background: rgba(239, 68, 68, 0.12);
+      border: 1px solid rgba(239, 68, 68, 0.24);
+      padding: 0.12em 0.42em;
+      border-radius: 6px;
+      word-break: break-word;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 28px 18px 88px;
+    }
+
+    /* Glass Hero Header */
+    .hero {
+      position: relative;
+      background: linear-gradient(145deg, rgba(25, 25, 34, 0.88), rgba(12, 12, 16, 0.92));
+      border: 1px solid var(--border-crimson);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      box-shadow: var(--shadow-card), var(--shadow-crimson);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      overflow: hidden;
+      margin-bottom: 24px;
+      animation: fadeSlideUp 0.5s ease-out both;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 92% 14%, rgba(239, 68, 68, 0.18), transparent 46%);
+      pointer-events: none;
+    }
+
+    .brand-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: rgba(239, 68, 68, 0.14);
+      border: 1px solid rgba(239, 68, 68, 0.38);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #FFE4E6;
+    }
+
+    .brand-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--crimson-primary);
+      box-shadow: 0 0 10px rgba(239, 68, 68, 0.75);
+    }
+
+    .meta-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-glass);
+      color: var(--text-secondary);
+      font-size: 0.84rem;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.85rem, 3.6vw, 2.65rem);
+      line-height: 1.18;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-subtitle {
+      margin: 0 0 22px;
+      font-size: 1.03rem;
+      color: var(--text-secondary);
+      max-width: 78ch;
+      position: relative;
+      z-index: 1;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .meta-card {
+      background: rgba(12, 12, 16, 0.72);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+    }
+
+    .meta-label {
+      display: block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      margin-bottom: 3px;
+    }
+
+    .meta-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      word-break: break-word;
+    }
+
+    /* Quick Highlights Strip */
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .highlight-tile {
+      background: var(--surface-glass);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-md);
+      padding: 15px 16px;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .highlight-tile strong {
+      display: block;
+      font-size: 0.94rem;
+      color: #FCA5A5;
+      margin-bottom: 4px;
+    }
+
+    .highlight-tile span {
+      display: block;
+      font-size: 0.89rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* Sticky / Accessible Table of Contents */
+    .toc-panel {
+      background: var(--surface-glass-strong);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      margin-bottom: 26px;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .toc-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .toc-title {
+      margin: 0;
+      font-size: 0.98rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: var(--text-primary);
+    }
+
+    .toc-toggle {
+      display: none;
+      background: rgba(239, 68, 68, 0.14);
+      color: #FFE4E6;
+      border: 1px solid var(--border-crimson);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .toc-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 8px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .toc-list a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 11px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--text-secondary);
+      font-size: 0.87rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+    .toc-list a:hover,
+    .toc-list a:focus-visible,
+    .toc-list a.active {
+      background: rgba(239, 68, 68, 0.14);
+      border-color: var(--border-crimson);
+      color: var(--text-primary);
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+
+    .toc-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      background: rgba(239, 68, 68, 0.18);
+      color: #FCA5A5;
+      font-size: 0.76rem;
+      font-weight: 700;
+    }
+
+    /* Section Cards */
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .policy-section {
+      background: var(--surface-glass);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-lg);
+      padding: 24px 26px;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      box-shadow: var(--shadow-card);
+      scroll-margin-top: 20px;
+      transition: border-color 0.25s ease;
+    }
+
+    .policy-section:hover {
+      border-color: rgba(239, 68, 68, 0.26);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .section-index {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.28), rgba(155, 0, 24, 0.38));
+      border: 1px solid var(--border-crimson);
+      color: #FFE4E6;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    .policy-section h2 {
+      margin: 0;
+      font-size: clamp(1.18rem, 2.2vw, 1.42rem);
+      line-height: 1.3;
+      color: var(--text-primary);
+    }
+
+    .policy-section h3 {
+      margin: 18px 0 8px;
+      font-size: 1.02rem;
+      color: #FECACA;
+    }
+
+    .policy-section p {
+      margin: 0 0 12px;
+      color: var(--text-secondary);
+    }
+
+    .policy-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .policy-section ul {
+      margin: 8px 0 14px;
+      padding-left: 20px;
+      color: var(--text-secondary);
+    }
+
+    .policy-section li {
+      margin-bottom: 8px;
+    }
+
+    .policy-section li strong {
+      color: var(--text-primary);
+    }
+
+    .callout {
+      margin: 14px 0;
+      padding: 14px 16px;
+      border-radius: var(--radius-sm);
+      background: var(--surface-crimson-tint);
+      border: 1px solid var(--border-crimson);
+      color: #FEE2E2;
+      font-size: 0.94rem;
+    }
+
+    .callout strong {
+      color: #FFFFFF;
+    }
+
+    /* Responsive Tables */
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 14px 0;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-glass);
+      background: rgba(8, 8, 12, 0.72);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 680px;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 12px 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    th {
+      background: rgba(239, 68, 68, 0.12);
+      color: #FFE4E6;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    td {
+      color: var(--text-secondary);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .tag-runtime {
+      background: rgba(239, 68, 68, 0.18);
+      border: 1px solid rgba(239, 68, 68, 0.44);
+      color: #FECACA;
+    }
+
+    .tag-install {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: #E2E8F0;
+    }
+
+    /* Contact Card */
+    .contact-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .contact-item {
+      background: rgba(12, 12, 16, 0.78);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+    }
+
+    .contact-item span {
+      display: block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .contact-item strong,
+    .contact-item a {
+      font-size: 0.96rem;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 28px;
+      padding: 20px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.86rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* Floating Scroll-to-Top Button */
+    .scroll-top-btn {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 50;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-width: 48px;
+      min-height: 48px;
+      padding: 0 16px;
+      border-radius: 999px;
+      border: 1px solid var(--border-crimson);
+      background: linear-gradient(135deg, rgba(217, 4, 41, 0.92), rgba(155, 0, 24, 0.94));
+      color: #FFFFFF;
+      font-size: 0.88rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55), 0 4px 18px rgba(217, 4, 41, 0.35);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(12px);
+      transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease, filter 0.2s ease;
+    }
+
+    .scroll-top-btn.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .scroll-top-btn:hover,
+    .scroll-top-btn:focus-visible {
+      filter: brightness(1.1);
+      outline: 2px solid #FCA5A5;
+      outline-offset: 2px;
+    }
+
+    @keyframes fadeSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        padding: 16px 12px 84px;
+      }
+
+      .hero {
+        padding: 22px 18px;
+        border-radius: 18px;
+      }
+
+      .policy-section {
+        padding: 20px 18px;
+        border-radius: 18px;
+      }
+
+      .toc-toggle {
+        display: inline-flex;
+      }
+
+      .toc-panel.collapsible .toc-list {
+        display: none;
+      }
+
+      .toc-panel.collapsible.open .toc-list {
+        display: grid;
+        margin-top: 12px;
+      }
+
+      .scroll-top-btn {
+        right: 14px;
+        bottom: 14px;
+        padding: 0 14px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+  <div class="container">
+    <header class="hero">
+      <div class="brand-row">
+        <div class="brand-pill">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span>ChillHub Privacy Policy</span>
+        </div>
+        <div class="meta-badge">Effective Date: November 17, 2026 &bull; Version 1.0</div>
+      </div>
+      <h1>Privacy Policy for ChillHub</h1>
+      <p class="hero-subtitle">
+        This Privacy Policy explains clearly and accurately how the <strong>ChillHub</strong> Android music player application handles information on your device and when communicating with external music and media services.
+      </p>
+      <div class="meta-grid">
+        <div class="meta-card">
+          <span class="meta-label">Application</span>
+          <span class="meta-value">ChillHub (<code>com.chillhub.musicplayer</code>)</span>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Developer</span>
+          <span class="meta-value">Saavej Choudhary</span>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Production</span>
+          <span class="meta-value">DNS Creations</span>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Privacy Contact</span>
+          <span class="meta-value"><a href="mailto:savejch7464@gmail.com">savejch7464@gmail.com</a></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="highlights" aria-label="Key Privacy Summary">
+      <div class="highlight-tile">
+        <strong>No Accounts or Login Required</strong>
+        <span>ChillHub has no cloud user accounts, passwords, or registration servers operated by DNS Creations.</span>
+      </div>
+      <div class="highlight-tile">
+        <strong>Local-First Library &amp; Preferences</strong>
+        <span>Your display name, playlists, favorites, history, queue, and settings stay locally on your device.</span>
+      </div>
+      <div class="highlight-tile">
+        <strong>No Advertising or Analytics SDKs</strong>
+        <span>ChillHub does not integrate ad networks, AdMob, Firebase Analytics, Crashlytics, or tracking IDs.</span>
+      </div>
+      <div class="highlight-tile">
+        <strong>Strict Runtime Mic &amp; Notification Consent</strong>
+        <span>Voice search and Android 13+ playback notifications only request permission when you trigger them.</span>
+      </div>
+    </section>
+
+    <nav class="toc-panel" id="tocPanel" aria-label="Privacy Policy Sections">
+      <div class="toc-header">
+        <h2 class="toc-title">Contents</h2>
+        <button type="button" class="toc-toggle" id="tocToggle" aria-expanded="true" aria-controls="tocList">Hide Sections</button>
+      </div>
+      <ol class="toc-list" id="tocList">
+        <li><a href="#section-1"><span class="toc-num">1</span> Introduction &amp; Developer Identity</a></li>
+        <li><a href="#section-2"><span class="toc-num">2</span> Scope of This Privacy Policy</a></li>
+        <li><a href="#section-3"><span class="toc-num">3</span> Information You Provide Directly</a></li>
+        <li><a href="#section-4"><span class="toc-num">4</span> Technical &amp; Automatic Information</a></li>
+        <li><a href="#section-5"><span class="toc-num">5</span> Android Permissions &amp; Consent</a></li>
+        <li><a href="#section-6"><span class="toc-num">6</span> Voice Search &amp; Microphone</a></li>
+        <li><a href="#section-7"><span class="toc-num">7</span> Playback &amp; Notifications</a></li>
+        <li><a href="#section-8"><span class="toc-num">8</span> Third-Party APIs &amp; Services</a></li>
+        <li><a href="#section-9"><span class="toc-num">9</span> Local Storage, Cache &amp; Backups</a></li>
+        <li><a href="#section-10"><span class="toc-num">10</span> Advertising &amp; Analytics Disclosure</a></li>
+        <li><a href="#section-11"><span class="toc-num">11</span> Data Sharing &amp; Disclosure</a></li>
+        <li><a href="#section-12"><span class="toc-num">12</span> Data Security &amp; Limitations</a></li>
+        <li><a href="#section-13"><span class="toc-num">13</span> Retention &amp; User Controls</a></li>
+        <li><a href="#section-14"><span class="toc-num">14</span> Children&rsquo;s Privacy</a></li>
+        <li><a href="#section-15"><span class="toc-num">15</span> Changes to This Policy</a></li>
+        <li><a href="#section-16"><span class="toc-num">16</span> Contact Information</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <section class="policy-section" id="section-1">
+        <div class="section-header">
+          <span class="section-index">1</span>
+          <h2>Introduction &amp; Developer Identity</h2>
+        </div>
+        <p>
+          <strong>ChillHub</strong> (Android package identifier: <code>com.chillhub.musicplayer</code>, version 1.0) is an Android music discovery and streaming player developed by <strong>Saavej Choudhary</strong> under <strong>DNS Creations</strong>.
+        </p>
+        <p>
+          Your privacy matters to us. This Privacy Policy describes exactly what data ChillHub processes locally on your Android device, what permissions it requests, and what requests are transmitted to external music catalog, artwork, and playback services based on the actual implementation of the application.
+        </p>
+        <p>
+          For any privacy questions, concerns, or requests, you may contact the developer directly at <a href="mailto:savejch7464@gmail.com">savejch7464@gmail.com</a>.
+        </p>
+      </section>
+
+      <section class="policy-section" id="section-2">
+        <div class="section-header">
+          <span class="section-index">2</span>
+          <h2>Scope of This Privacy Policy</h2>
+        </div>
+        <p>
+          This Privacy Policy applies to the ChillHub Android application (supporting Android 7.0 / API 24 and higher). It covers:
+        </p>
+        <ul>
+          <li>Data entered or generated inside ChillHub and stored locally on your device.</li>
+          <li>Device permissions declared by ChillHub and when Android asks for your consent.</li>
+          <li>Network requests sent directly from your device to third-party music, artwork, speech-recognition, or embedded video-playback providers.</li>
+        </ul>
+        <p>
+          This policy does not govern the independent privacy practices of external third-party platforms (such as JioSaavn endpoints, Google/YouTube services, or your device&rsquo;s built-in speech recognition provider) when your device connects to them to fetch search results, artwork, or streams.
+        </p>
+      </section>
+
+      <section class="policy-section" id="section-3">
+        <div class="section-header">
+          <span class="section-index">3</span>
+          <h2>Information You Provide Directly</h2>
+        </div>
+        <p>
+          ChillHub does not require account registration, sign-in, email verification, phone numbers, or passwords. Any personalizing information you enter inside the app is stored locally on your device only:
+        </p>
+        <ul>
+          <li><strong>Display Name / Profile Name:</strong> During onboarding or inside <em>Profile &amp; Settings</em>, you may optionally enter or edit a display name (stored in the local <code>app_settings</code> database table). It is used solely to personalize greetings and &ldquo;Made For You&rdquo; labels on your screen and is not uploaded by ChillHub to any developer server.</li>
+          <li><strong>Playlists &amp; Favorites:</strong> Songs you mark as favorites and custom playlists you create (including playlist titles, track metadata, and artwork URLs) are saved locally in the app&rsquo;s database.</li>
+          <li><strong>Music Search Queries:</strong> Text or voice queries you enter are saved in your local <code>search_history</code> table for quick access and sent to the active music search endpoints solely to retrieve matching songs, albums, and artists.</li>
+          <li><strong>App Preferences &amp; Playback Settings:</strong> Audio quality choice, theme preference, active stream source preference, shuffle/repeat mode, playback volume, and onboarding completion flag are saved locally.</li>
+          <li><strong>Support Emails (User-Initiated):</strong> If you tap the feedback/contact option in <em>Profile &amp; Settings</em> or email <a href="mailto:savejch7464@gmail.com">savejch7464@gmail.com</a>, your email app opens outside ChillHub and whatever details you choose to include in your email are processed according to standard email delivery.</li>
+        </ul>
+      </section>
+
+      <section class="policy-section" id="section-4">
+        <div class="section-header">
+          <span class="section-index">4</span>
+          <h2>Automatically Collected &amp; Technical Information</h2>
+        </div>
+        <p>
+          To provide music playback, adaptive audio quality, and continuous listening, ChillHub processes limited technical and activity information locally on your device and sends standard network requests over HTTPS:
+        </p>
+        <ul>
+          <li><strong>Local Listening Activity &amp; Personalization Signals:</strong> ChillHub stores your <code>recently_played</code> tracks, play counts, timestamps, saved <code>playback_queue</code> position, and local <code>listening_preferences</code> (artist/category/language weights derived from tracks you play or favorite) inside its on-device Room database to resume playback and personalize your home feed locally.</li>
+          <li><strong>Network Connectivity &amp; Bandwidth State:</strong> Using Android&rsquo;s <code>ConnectivityManager</code>, ChillHub checks whether your device is online, whether the network is metered (cellular) or unmetered (Wi-Fi), and estimated downstream bandwidth so automatic audio quality and offline notices work properly.</li>
+          <li><strong>Standard Network Request Metadata:</strong> Whenever your device fetches music metadata, artwork, or streams from third-party APIs or CDNs, those external servers automatically receive standard technical HTTP metadata (such as your IP address, user-agent/device networking headers, and requested song/album/video IDs or search keywords).</li>
+          <li><strong>Image &amp; WebView Caching:</strong> Album/artist thumbnails downloaded via Coil are cached locally in your app cache directory (up to 50 MB). When playing YouTube tracks through the embedded YouTube IFrame Player, Android&rsquo;s WebView may maintain standard browser/DOM storage required for playback.</li>
+        </ul>
+        <div class="callout">
+          <strong>What ChillHub Does NOT Collect:</strong> ChillHub does not read your contacts, SMS messages, call logs, photos/videos, local audio files on shared storage, precise GPS location, or Android Advertising ID (<code>AD_ID</code>).
+        </div>
+      </section>
+
+      <section class="policy-section" id="section-5">
+        <div class="section-header">
+          <span class="section-index">5</span>
+          <h2>Android Permissions &amp; Runtime Consent</h2>
+        </div>
+        <p>
+          Android distinguishes between <strong>install-time (normal/service) permissions</strong> granted automatically when you install the app, and <strong>runtime permissions</strong> that trigger a system permission popup asking for your explicit approval before a sensitive feature runs.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Android Permission</th>
+                <th>Consent Type &amp; Popup</th>
+                <th>Why ChillHub Needs It</th>
+                <th>If Denied or Restricted</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>android.permission.RECORD_AUDIO</code></td>
+                <td><span class="tag tag-runtime">Runtime Popup</span></td>
+                <td>Triggered only when you tap the microphone icon on the Search screen to perform voice search using Android&rsquo;s speech recognizer.</td>
+                <td>Voice search does not run; an inline notice appears and standard typed music search continues to work normally.</td>
+              </tr>
+              <tr>
+                <td><code>android.permission.POST_NOTIFICATIONS</code></td>
+                <td><span class="tag tag-runtime">Runtime Popup (Android 13+)</span></td>
+                <td>Requested once per session when direct audio playback starts so ChillHub can display media playback and lock-screen controls.</td>
+                <td>Notification controls are hidden, while in-app and background audio playback continue without interruption.</td>
+              </tr>
+              <tr>
+                <td><code>android.permission.INTERNET</code></td>
+                <td><span class="tag tag-install">Install-Time (No Popup)</span></td>
+                <td>Required to search music catalogs, load album artwork, fetch streams, and load the embedded YouTube player.</td>
+                <td>Streaming and online search require an active internet connection.</td>
+              </tr>
+              <tr>
+                <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
+                <td><span class="tag tag-install">Install-Time (No Popup)</span></td>
+                <td>Used to detect offline status and metered/bandwidth conditions for automatic audio quality selection.</td>
+                <td>Not revocable by user; helps prevent failed requests offline.</td>
+              </tr>
+              <tr>
+                <td><code>android.permission.FOREGROUND_SERVICE</code> &amp; <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td>
+                <td><span class="tag tag-install">Install-Time (No Popup)</span></td>
+                <td>Allows <code>ChillHubPlaybackService</code> (Media3 <code>MediaSessionService</code>) to continue playing audio when you switch apps or lock your screen (Android 14+ media playback service type).</td>
+                <td>System-managed permission; required by Android OS for background audio playback.</td>
+              </tr>
+              <tr>
+                <td><code>android.permission.WAKE_LOCK</code></td>
+                <td><span class="tag tag-install">Install-Time (No Popup)</span></td>
+                <td>Used by Media3 ExoPlayer during network streaming and by <code>AlarmManager</code> to trigger your optional Sleep Timer accurately.</td>
+                <td>System-managed permission; prevents playback stalls during streaming.</td>
+              </tr>
+              <tr>
+                <td><code>com.chillhub.musicplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td>
+                <td><span class="tag tag-install">Auto-Added by AndroidX (No Popup)</span></td>
+                <td>Added automatically at build time by AndroidX/Jetpack libraries to isolate internal app broadcast receivers from external apps.</td>
+                <td>Internal OS security signature permission; not user-facing.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          <strong>Permissions Explicitly NOT Used:</strong> ChillHub does not declare or request <code>READ_MEDIA_AUDIO</code>, <code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>, <code>CAMERA</code>, <code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>, <code>READ_CONTACTS</code>, or <code>com.google.android.gms.permission.AD_ID</code>.
+        </p>
+      </section>
+
+      <section class="policy-section" id="section-6">
+        <div class="section-header">
+          <span class="section-index">6</span>
+          <h2>Voice Search &amp; Microphone Processing</h2>
+        </div>
+        <p>
+          ChillHub provides an optional microphone button in the Search screen for hands-free voice search:
+        </p>
+        <ul>
+          <li>ChillHub never accesses your microphone in the background or without you tapping the voice-search icon.</li>
+          <li>When tapped, ChillHub checks for <code>RECORD_AUDIO</code> permission and displays Android&rsquo;s system permission dialog if not yet granted.</li>
+          <li>When active, ChillHub uses Android&rsquo;s built-in <code>SpeechRecognizer</code> (<code>RecognizerIntent.ACTION_RECOGNIZE_SPEECH</code>) to pass spoken audio to your device&rsquo;s active OS speech recognition service (such as Google Speech Services or your device default provider).</li>
+          <li><strong>No Audio Recording Storage by ChillHub:</strong> ChillHub does not record, save, or upload raw audio files to any server controlled by DNS Creations; it only receives the converted text transcription to populate your music search query.</li>
+          <li>You can revoke microphone permission anytime in Android System Settings and continue using text search normally.</li>
+        </ul>
+      </section>
+
+      <section class="policy-section" id="section-7">
+        <div class="section-header">
+          <span class="section-index">7</span>
+          <h2>Music Streaming, Playback &amp; Background Notifications</h2>
+        </div>
+        <p>
+          Background audio playback is powered by Jetpack Media3 (<code>ExoPlayer</code> and <code>MediaSessionService</code>) via <code>ChillHubPlaybackService</code>:
+        </p>
+        <ul>
+          <li><strong>Media Controls Notification:</strong> On Android 13 (API 33) and above, ChillHub requests <code>POST_NOTIFICATIONS</code> once per session when direct playback starts so Media3 can display track title, artist, artwork, and play/pause/skip controls in the notification shade and lock screen.</li>
+          <li><strong>Playback Continuity on Denial:</strong> If you decline notification permission, ChillHub still plays your music cleanly without displaying notification controls.</li>
+          <li><strong>Sleep Timer:</strong> If you enable the in-app Sleep Timer, ChillHub schedules a local wake alarm via Android&rsquo;s <code>AlarmManager</code> to pause playback automatically when the timer expires.</li>
+        </ul>
+      </section>
+
+      <section class="policy-section" id="section-8">
+        <div class="section-header">
+          <span class="section-index">8</span>
+          <h2>Third-Party APIs, Embedded Players &amp; External Services</h2>
+        </div>
+        <p>
+          To provide music search, album tracklists, artist pages, artwork, and streaming, ChillHub communicates directly from your device with external third-party services. ChillHub does not operate a proprietary backend server that collects user profiles.
+        </p>
+        <ul>
+          <li>
+            <strong>JioSaavn Catalog Endpoints &amp; Community API Proxy:</strong> ChillHub queries JioSaavn web API endpoints (<code>www.jiosaavn.com</code>), an unofficial community-hosted JioSaavn-compatible endpoint (<code>jiosavan-coderaryan.vercel.app</code>), and JioSaavn media CDNs (<code>saavncdn.com</code>) to retrieve song, album, artist, and stream URL metadata. When queried, those servers receive your search terms, selected item IDs/URLs, and standard HTTP connection metadata (such as IP address).
+          </li>
+          <li>
+            <strong>YouTube Data API v3 (Optional Configuration):</strong> When a YouTube API key is configured in the app build, ChillHub queries <code>www.googleapis.com/youtube/v3</code> with your search query, region code (<code>IN</code>), language preference, or video ID to locate music videos/tracks.
+          </li>
+          <li>
+            <strong>Embedded YouTube IFrame Player (WebView):</strong> When playing a YouTube-sourced track, ChillHub loads <code>https://www.youtube.com/iframe_api</code> inside an Android <code>WebView</code> with JavaScript and DOM storage enabled (<code>domStorageEnabled = true</code>). Inside that embedded player, YouTube/Google independently processes video requests, IP address, device/WebView metadata, and browser/DOM storage or cookies in accordance with Google&rsquo;s Privacy Policy and YouTube&rsquo;s Terms of Service.
+          </li>
+          <li>
+            <strong>Coil Image Loader &amp; OkHttp / Retrofit:</strong> Open-source Android networking and image caching libraries running strictly inside the app to fetch and cache album/artist artwork and API responses.
+          </li>
+          <li>
+            <strong>Lyrics Status:</strong> In the current version, ChillHub&rsquo;s lyrics provider is disabled locally and does not send track data to any external lyrics API.
+          </li>
+          <li>
+            <strong>Device Speech Recognition Service:</strong> Receives audio only when you explicitly tap Voice Search.
+          </li>
+        </ul>
+        <p>
+          Please note that external third-party APIs and embedded media players operate under their own independent privacy policies and terms. We recommend reviewing Google/YouTube&rsquo;s privacy disclosures and applicable provider policies for details on how they handle connection logs and cookies.
+        </p>
+      </section>
+
+      <section class="policy-section" id="section-9">
+        <div class="section-header">
+          <span class="section-index">9</span>
+          <h2>Local Storage, Caching &amp; Device Backups</h2>
+        </div>
+        <p>
+          ChillHub stores user data locally on your device using standard Android storage mechanisms:
+        </p>
+        <ul>
+          <li><strong>Local Room SQLite Database (<code>chillhub_music.db</code>):</strong> Stores your favorites, custom playlists, playlist songs, recently played history, search history, local listening preferences, active playback queue, and app settings (including your optional display name).</li>
+          <li><strong>Artwork Disk Cache:</strong> Coil stores up to 50 MB of album and artist thumbnail images in the app&rsquo;s private cache folder (<code>chillhub_image_cache</code>).</li>
+          <li><strong>WebView Storage:</strong> Android&rsquo;s WebView cache and DOM storage are used by the embedded YouTube IFrame player during YouTube playback.</li>
+          <li><strong>Android Auto Backup:</strong> ChillHub&rsquo;s Android manifest includes <code>android:allowBackup="true"</code> with standard Android backup configuration files. Depending on your Android OS version and personal Google device backup settings, the Android operating system may back up app-private database data to your personal device backup account unless excluded or disabled in your device settings.</li>
+        </ul>
+      </section>
+
+      <section class="policy-section" id="section-10">
+        <div class="section-header">
+          <span class="section-index">10</span>
+          <h2>Advertising, Analytics &amp; Tracking Disclosure</h2>
+        </div>
+        <p>
+          Based on ChillHub&rsquo;s verified codebase and build dependencies:
+        </p>
+        <ul>
+          <li><strong>No Advertising SDKs:</strong> ChillHub displays no third-party ads and does not include AdMob or any ad mediation SDK.</li>
+          <li><strong>No Analytics or Crash Reporting SDKs:</strong> ChillHub does not include Firebase Analytics, Crashlytics, Mixpanel, Amplitude, Sentry, or any telemetry/behavioral profiling SDK.</li>
+          <li><strong>No Cross-App Tracking:</strong> ChillHub does not request the Google Advertising ID (<code>AD_ID</code>) and does not track users across other apps or websites.</li>
+        </ul>
+        <p>
+          <em>Note regarding embedded YouTube playback:</em> Although ChillHub itself runs zero ad or analytics SDKs, loading an embedded YouTube IFrame WebView connects your device directly to YouTube, which independently manages its own embedded player telemetry and policies.
+        </p>
+      </section>
+
+      <section class="policy-section" id="section-11">
+        <div class="section-header">
+          <span class="section-index">11</span>
+          <h2>Data Sharing &amp; Disclosure</h2>
+        </div>
+        <p>
+          Saavej Choudhary and DNS Creations do <strong>not</strong> sell, rent, trade, or share your personal information with data brokers, advertisers, or marketing networks. Data leaves your device only in the following strictly functional situations:
+        </p>
+        <ul>
+          <li><strong>Music &amp; Artwork Requests:</strong> Search queries and track/album/artist IDs sent directly from your device to JioSaavn endpoints, optional YouTube Data API, or YouTube&rsquo;s embedded IFrame player to play music and show artwork.</li>
+          <li><strong>Voice Search Transcription:</strong> Voice audio passed directly to your device&rsquo;s OS <code>SpeechRecognizer</code> provider when you tap the microphone icon.</li>
+          <li><strong>User-Initiated Support Email:</strong> Messages you manually compose and send through your device&rsquo;s email application.</li>
+        </ul>
+      </section>
+
+      <section class="policy-section" id="section-12">
+        <div class="section-header">
+          <span class="section-index">12</span>
+          <h2>Data Security &amp; Limitations</h2>
+        </div>
+        <p>
+          ChillHub applies practical technical safeguards appropriate to a local-first music player:
+        </p>
+        <ul>
+          <li><strong>Encrypted Transport (HTTPS):</strong> Catalog, artwork, YouTube API, and embedded player requests use HTTPS endpoints.</li>
+          <li><strong>Private App Sandbox:</strong> Your Room database and image cache reside inside Android&rsquo;s private app storage directory, protected by OS sandboxing from other non-privileged apps.</li>
+          <li><strong>Release Build Logging Disabled:</strong> Network HTTP logging (<code>HttpLoggingInterceptor</code>) is strictly disabled (<code>Level.NONE</code>) in release builds, and sensitive headers/API keys are redacted in debug logs.</li>
+        </ul>
+        <p>
+          <strong>Important Limitation:</strong> ChillHub&rsquo;s local Room database is not additionally encrypted at rest by a separate app-level encryption layer beyond standard Android device encryption, and no method of electronic storage or internet transmission can be guaranteed 100% secure.
+        </p>
+      </section>
+
+      <section class="policy-section" id="section-13">
+        <div class="section-header">
+          <span class="section-index">13</span>
+          <h2>Data Retention &amp; Your Controls</h2>
+        </div>
+        <p>
+          Because ChillHub stores your library and preferences locally on your device rather than on developer-hosted servers, you stay in full control of your data:
+        </p>
+        <ul>
+          <li><strong>Edit or Clear Inside ChillHub:</strong> You can update your display name in <em>Profile &amp; Settings</em>, delete individual search queries or clear all search history, remove favorites, delete playlists, and toggle app settings anytime.</li>
+          <li><strong>Clear All Local Data:</strong> You can erase the entire local database, image cache, and WebView storage at any time via <em>Android Settings &rarr; Apps &rarr; ChillHub &rarr; Storage &rarr; Clear Data / Clear Cache</em>, or by uninstalling ChillHub.</li>
+          <li><strong>Permission Controls:</strong> You can grant or revoke Microphone (<code>RECORD_AUDIO</code>) and Notification (<code>POST_NOTIFICATIONS</code>) permissions at any time in Android App Settings.</li>
+        </ul>
+        <p>
+          ChillHub does not control server-side access log retention of independent third-party endpoints (such as JioSaavn endpoints, the community API proxy, or Google/YouTube services).
+        </p>
+      </section>
+
+      <section class="policy-section" id="section-14">
+        <div class="section-header">
+          <span class="section-index">14</span>
+          <h2>Children&rsquo;s Privacy</h2>
+        </div>
+        <p>
+          ChillHub is a general-audience music player and does not knowingly collect personal information from children under the age of 13 (or the applicable minimum digital consent age in your jurisdiction). ChillHub does not include user accounts, social messaging, or behavioral advertising. If you believe a child has submitted personal information via direct email support, please contact <a href="mailto:savejch7464@gmail.com">savejch7464@gmail.com</a> so it can be promptly removed.
+        </p>
+      </section>
+
+      <section class="policy-section" id="section-15">
+        <div class="section-header">
+          <span class="section-index">15</span>
+          <h2>Changes to This Privacy Policy</h2>
+        </div>
+        <p>
+          We may update this Privacy Policy if ChillHub introduces new features, permissions, APIs, or storage practices, or to comply with applicable legal and Google Play policy requirements. Any updates will be reflected by revising the Effective Date at the top of this page. Continued use of ChillHub after an update takes effect constitutes acceptance of the revised Privacy Policy.
+        </p>
+      </section>
+
+      <section class="policy-section" id="section-16">
+        <div class="section-header">
+          <span class="section-index">16</span>
+          <h2>Contact Information</h2>
+        </div>
+        <p>
+          If you have any questions about this Privacy Policy, Android permissions, or data handling in ChillHub, please reach out to the developer:
+        </p>
+        <div class="contact-box">
+          <div class="contact-item">
+            <span>Developer Name</span>
+            <strong>Saavej Choudhary</strong>
+          </div>
+          <div class="contact-item">
+            <span>Production</span>
+            <strong>DNS Creations</strong>
+          </div>
+          <div class="contact-item">
+            <span>Contact Email</span>
+            <a href="mailto:savejch7464@gmail.com">savejch7464@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span>Application</span>
+            <strong>ChillHub (<code>com.chillhub.musicplayer</code>)</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Saavej Choudhary &bull; DNS Creations. Privacy Policy for ChillHub Android Music Player.</p>
+    </footer>
+  </div>
+
+  <button type="button" class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll back to top" title="Back to top">
+    &uarr; Top
+  </button>
+
+  <script>
+    (function () {
+      var scrollBtn = document.getElementById("scrollTopBtn");
+      var tocPanel = document.getElementById("tocPanel");
+      var tocToggle = document.getElementById("tocToggle");
+      var tocLinks = Array.prototype.slice.call(document.querySelectorAll(".toc-list a"));
+      var sections = Array.prototype.slice.call(document.querySelectorAll(".policy-section"));
+
+      // Progressive enhancement: collapsible TOC on narrow mobile viewports
+      function syncTocMode() {
+        if (!tocPanel || !tocToggle) return;
+        if (window.innerWidth <= 720) {
+          tocPanel.classList.add("collapsible");
+          if (!tocPanel.dataset.initialized) {
+            tocPanel.classList.remove("open");
+            tocToggle.setAttribute("aria-expanded", "false");
+            tocToggle.textContent = "Show Sections";
+            tocPanel.dataset.initialized = "true";
+          }
+        } else {
+          tocPanel.classList.remove("collapsible");
+          tocPanel.classList.add("open");
+          tocToggle.setAttribute("aria-expanded", "true");
+          tocToggle.textContent = "Hide Sections";
+        }
+      }
+
+      if (tocToggle && tocPanel) {
+        tocToggle.addEventListener("click", function () {
+          var isOpen = tocPanel.classList.toggle("open");
+          tocToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          tocToggle.textContent = isOpen ? "Hide Sections" : "Show Sections";
+        });
+      }
+
+      window.addEventListener("resize", syncTocMode);
+      syncTocMode();
+
+      // Scroll-to-top button visibility & active TOC section highlighting
+      function updateOnScroll() {
+        var y = window.scrollY || window.pageYOffset || 0;
+        if (scrollBtn) {
+          if (y > 320) {
+            scrollBtn.classList.add("visible");
+          } else {
+            scrollBtn.classList.remove("visible");
+          }
+        }
+
+        if (sections.length && tocLinks.length) {
+          var currentId = sections[0].id;
+          for (var i = 0; i < sections.length; i++) {
+            var rect = sections[i].getBoundingClientRect();
+            if (rect.top <= 140) {
+              currentId = sections[i].id;
+            }
+          }
+          for (var j = 0; j < tocLinks.length; j++) {
+            var link = tocLinks[j];
+            if (link.getAttribute("href") === "#" + currentId) {
+              link.classList.add("active");
+            } else {
+              link.classList.remove("active");
+            }
+          }
+        }
+      }
+
+      if (scrollBtn) {
+        scrollBtn.addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+
+      // Close mobile TOC when a jump link is clicked
+      tocLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+          if (window.innerWidth <= 720 && tocPanel && tocToggle) {
+            tocPanel.classList.remove("open");
+            tocToggle.setAttribute("aria-expanded", "false");
+            tocToggle.textContent = "Show Sections";
+          }
+        });
+      });
+
+      window.addEventListener("scroll", updateOnScroll, { passive: true });
+      updateOnScroll();
+    })();
+  </script>
+</body>
+</html>
