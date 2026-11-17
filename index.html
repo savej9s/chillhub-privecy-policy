@@ -632,7 +632,7 @@
           <span class="brand-dot" aria-hidden="true"></span>
           <span>ChillHub Privacy Policy</span>
         </div>
-        <div class="meta-badge">Effective Date: November 17, 2026 &bull; Version 1.0</div>
+        <div class="meta-badge">Effective Date: November 17, 2026</div>
       </div>
       <h1>Privacy Policy for ChillHub</h1>
       <p class="hero-subtitle">
@@ -690,7 +690,7 @@
         <li><a href="#section-5"><span class="toc-num">5</span> Android Permissions &amp; Consent</a></li>
         <li><a href="#section-6"><span class="toc-num">6</span> Voice Search &amp; Microphone</a></li>
         <li><a href="#section-7"><span class="toc-num">7</span> Playback &amp; Notifications</a></li>
-        <li><a href="#section-8"><span class="toc-num">8</span> Third-Party APIs &amp; Services</a></li>
+        <li><a href="#section-8"><span class="toc-num">8</span> Third-Party Services &amp; Players</a></li>
         <li><a href="#section-9"><span class="toc-num">9</span> Local Storage, Cache &amp; Backups</a></li>
         <li><a href="#section-10"><span class="toc-num">10</span> Advertising &amp; Analytics Disclosure</a></li>
         <li><a href="#section-11"><span class="toc-num">11</span> Data Sharing &amp; Disclosure</a></li>
@@ -709,10 +709,10 @@
           <h2>Introduction &amp; Developer Identity</h2>
         </div>
         <p>
-          <strong>ChillHub</strong> (Android package identifier: <code>com.chillhub.musicplayer</code>, version 1.0) is an Android music discovery and streaming player developed by <strong>Saavej Choudhary</strong> under <strong>DNS Creations</strong>.
+          <strong>ChillHub</strong> (Android package identifier: <code>com.chillhub.musicplayer</code>) is an Android music discovery and streaming player developed by <strong>Saavej Choudhary</strong> under <strong>DNS Creations</strong>.
         </p>
         <p>
-          Your privacy matters to us. This Privacy Policy describes exactly what data ChillHub processes locally on your Android device, what permissions it requests, and what requests are transmitted to external music catalog, artwork, and playback services based on the actual implementation of the application.
+          Your privacy matters to us. This Privacy Policy describes what data ChillHub processes locally on your Android device, what permissions it requests, and what information is shared when communicating with external music catalog, artwork, and media services.
         </p>
         <p>
           For any privacy questions, concerns, or requests, you may contact the developer directly at <a href="mailto:savejch7464@gmail.com">savejch7464@gmail.com</a>.
@@ -725,15 +725,15 @@
           <h2>Scope of This Privacy Policy</h2>
         </div>
         <p>
-          This Privacy Policy applies to the ChillHub Android application (supporting Android 7.0 / API 24 and higher). It covers:
+          This Privacy Policy applies to the ChillHub Android application. It covers:
         </p>
         <ul>
           <li>Data entered or generated inside ChillHub and stored locally on your device.</li>
           <li>Device permissions declared by ChillHub and when Android asks for your consent.</li>
-          <li>Network requests sent directly from your device to third-party music, artwork, speech-recognition, or embedded video-playback providers.</li>
+          <li>Requests sent directly from your device to third-party music, artwork, speech-recognition, or embedded media-playback providers.</li>
         </ul>
         <p>
-          This policy does not govern the independent privacy practices of external third-party platforms (such as JioSaavn endpoints, Google/YouTube services, or your device&rsquo;s built-in speech recognition provider) when your device connects to them to fetch search results, artwork, or streams.
+          This policy does not govern the independent privacy practices of external third-party platforms (such as JioSaavn-compatible music services, Google/YouTube services, or your device&rsquo;s built-in speech recognition provider) when your device connects to them to fetch search results, artwork, or streams.
         </p>
       </section>
 
@@ -746,10 +746,10 @@
           ChillHub does not require account registration, sign-in, email verification, phone numbers, or passwords. Any personalizing information you enter inside the app is stored locally on your device only:
         </p>
         <ul>
-          <li><strong>Display Name / Profile Name:</strong> During onboarding or inside <em>Profile &amp; Settings</em>, you may optionally enter or edit a display name (stored in the local <code>app_settings</code> database table). It is used solely to personalize greetings and &ldquo;Made For You&rdquo; labels on your screen and is not uploaded by ChillHub to any developer server.</li>
-          <li><strong>Playlists &amp; Favorites:</strong> Songs you mark as favorites and custom playlists you create (including playlist titles, track metadata, and artwork URLs) are saved locally in the app&rsquo;s database.</li>
-          <li><strong>Music Search Queries:</strong> Text or voice queries you enter are saved in your local <code>search_history</code> table for quick access and sent to the active music search endpoints solely to retrieve matching songs, albums, and artists.</li>
-          <li><strong>App Preferences &amp; Playback Settings:</strong> Audio quality choice, theme preference, active stream source preference, shuffle/repeat mode, playback volume, and onboarding completion flag are saved locally.</li>
+          <li><strong>Display Name / Profile Name:</strong> During onboarding or inside <em>Profile &amp; Settings</em>, you may optionally enter or edit a display name, which is stored locally on your device. It is used solely to personalize greetings and &ldquo;Made For You&rdquo; labels on your screen and is not uploaded by ChillHub to any developer server.</li>
+          <li><strong>Playlists &amp; Favorites:</strong> Songs you mark as favorites and custom playlists you create (including playlist titles, track metadata, and artwork references) are saved locally in the app&rsquo;s database.</li>
+          <li><strong>Music Search Queries:</strong> Text or voice queries you enter are saved locally in your search history for quick access and sent to external music search services solely to retrieve matching songs, albums, and artists.</li>
+          <li><strong>App Preferences &amp; Playback Settings:</strong> Audio quality choice, theme preference, active stream source preference, shuffle/repeat mode, playback volume, and onboarding completion status are saved locally.</li>
           <li><strong>Support Emails (User-Initiated):</strong> If you tap the feedback/contact option in <em>Profile &amp; Settings</em> or email <a href="mailto:savejch7464@gmail.com">savejch7464@gmail.com</a>, your email app opens outside ChillHub and whatever details you choose to include in your email are processed according to standard email delivery.</li>
         </ul>
       </section>
@@ -763,10 +763,10 @@
           To provide music playback, adaptive audio quality, and continuous listening, ChillHub processes limited technical and activity information locally on your device and sends standard network requests over HTTPS:
         </p>
         <ul>
-          <li><strong>Local Listening Activity &amp; Personalization Signals:</strong> ChillHub stores your <code>recently_played</code> tracks, play counts, timestamps, saved <code>playback_queue</code> position, and local <code>listening_preferences</code> (artist/category/language weights derived from tracks you play or favorite) inside its on-device Room database to resume playback and personalize your home feed locally.</li>
-          <li><strong>Network Connectivity &amp; Bandwidth State:</strong> Using Android&rsquo;s <code>ConnectivityManager</code>, ChillHub checks whether your device is online, whether the network is metered (cellular) or unmetered (Wi-Fi), and estimated downstream bandwidth so automatic audio quality and offline notices work properly.</li>
-          <li><strong>Standard Network Request Metadata:</strong> Whenever your device fetches music metadata, artwork, or streams from third-party APIs or CDNs, those external servers automatically receive standard technical HTTP metadata (such as your IP address, user-agent/device networking headers, and requested song/album/video IDs or search keywords).</li>
-          <li><strong>Image &amp; WebView Caching:</strong> Album/artist thumbnails downloaded via Coil are cached locally in your app cache directory (up to 50 MB). When playing YouTube tracks through the embedded YouTube IFrame Player, Android&rsquo;s WebView may maintain standard browser/DOM storage required for playback.</li>
+          <li><strong>Local Listening Activity &amp; Personalization Signals:</strong> ChillHub stores your recently played tracks, play counts, timestamps, saved playback queue position, and local listening preferences (derived from tracks you play or favorite) inside its on-device database to resume playback and personalize your home feed locally.</li>
+          <li><strong>Network Connectivity &amp; Bandwidth State:</strong> Using standard Android connectivity checks, ChillHub inspects whether your device is online, whether the connection is metered (cellular) or unmetered (Wi-Fi), and estimated network speed so automatic audio quality and offline notices work properly.</li>
+          <li><strong>Standard Network Request Metadata:</strong> Whenever your device fetches music metadata, artwork, or streams from third-party services or content delivery networks, those external servers automatically receive standard technical HTTP metadata (such as your IP address, device networking headers, and requested track, album, or search terms).</li>
+          <li><strong>Image &amp; Embedded Player Caching:</strong> Album and artist thumbnails are cached locally in your app&rsquo;s private cache directory (up to 50 MB). When playing YouTube-sourced tracks through the embedded player, Android&rsquo;s WebView may maintain standard browser storage required for playback.</li>
         </ul>
         <div class="callout">
           <strong>What ChillHub Does NOT Collect:</strong> ChillHub does not read your contacts, SMS messages, call logs, photos/videos, local audio files on shared storage, precise GPS location, or Android Advertising ID (<code>AD_ID</code>).
@@ -819,19 +819,19 @@
               <tr>
                 <td><code>android.permission.FOREGROUND_SERVICE</code> &amp; <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td>
                 <td><span class="tag tag-install">Install-Time (No Popup)</span></td>
-                <td>Allows <code>ChillHubPlaybackService</code> (Media3 <code>MediaSessionService</code>) to continue playing audio when you switch apps or lock your screen (Android 14+ media playback service type).</td>
+                <td>Allows ChillHub&rsquo;s background media playback service to continue playing audio when you switch apps or lock your screen (required on Android 14 and higher for media playback services).</td>
                 <td>System-managed permission; required by Android OS for background audio playback.</td>
               </tr>
               <tr>
                 <td><code>android.permission.WAKE_LOCK</code></td>
                 <td><span class="tag tag-install">Install-Time (No Popup)</span></td>
-                <td>Used by Media3 ExoPlayer during network streaming and by <code>AlarmManager</code> to trigger your optional Sleep Timer accurately.</td>
+                <td>Prevents audio streaming stalls during playback and allows your optional Sleep Timer alarm to pause music reliably.</td>
                 <td>System-managed permission; prevents playback stalls during streaming.</td>
               </tr>
               <tr>
                 <td><code>com.chillhub.musicplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td>
                 <td><span class="tag tag-install">Auto-Added by AndroidX (No Popup)</span></td>
-                <td>Added automatically at build time by AndroidX/Jetpack libraries to isolate internal app broadcast receivers from external apps.</td>
+                <td>Added automatically at build time by AndroidX libraries to isolate internal app broadcast receivers from external apps.</td>
                 <td>Internal OS security signature permission; not user-facing.</td>
               </tr>
             </tbody>
@@ -853,7 +853,7 @@
         <ul>
           <li>ChillHub never accesses your microphone in the background or without you tapping the voice-search icon.</li>
           <li>When tapped, ChillHub checks for <code>RECORD_AUDIO</code> permission and displays Android&rsquo;s system permission dialog if not yet granted.</li>
-          <li>When active, ChillHub uses Android&rsquo;s built-in <code>SpeechRecognizer</code> (<code>RecognizerIntent.ACTION_RECOGNIZE_SPEECH</code>) to pass spoken audio to your device&rsquo;s active OS speech recognition service (such as Google Speech Services or your device default provider).</li>
+          <li>When active, ChillHub uses Android&rsquo;s built-in speech recognition system to pass spoken audio to your device&rsquo;s active OS speech recognition provider (such as Google Speech Services or your device default provider).</li>
           <li><strong>No Audio Recording Storage by ChillHub:</strong> ChillHub does not record, save, or upload raw audio files to any server controlled by DNS Creations; it only receives the converted text transcription to populate your music search query.</li>
           <li>You can revoke microphone permission anytime in Android System Settings and continue using text search normally.</li>
         </ul>
@@ -865,45 +865,45 @@
           <h2>Music Streaming, Playback &amp; Background Notifications</h2>
         </div>
         <p>
-          Background audio playback is powered by Jetpack Media3 (<code>ExoPlayer</code> and <code>MediaSessionService</code>) via <code>ChillHubPlaybackService</code>:
+          Background audio playback is powered by Android&rsquo;s Jetpack Media3 audio service:
         </p>
         <ul>
-          <li><strong>Media Controls Notification:</strong> On Android 13 (API 33) and above, ChillHub requests <code>POST_NOTIFICATIONS</code> once per session when direct playback starts so Media3 can display track title, artist, artwork, and play/pause/skip controls in the notification shade and lock screen.</li>
+          <li><strong>Media Controls Notification:</strong> On Android 13 and above, ChillHub requests <code>POST_NOTIFICATIONS</code> once per session when direct playback starts so the system can display track title, artist, artwork, and play/pause/skip controls in the notification shade and lock screen.</li>
           <li><strong>Playback Continuity on Denial:</strong> If you decline notification permission, ChillHub still plays your music cleanly without displaying notification controls.</li>
-          <li><strong>Sleep Timer:</strong> If you enable the in-app Sleep Timer, ChillHub schedules a local wake alarm via Android&rsquo;s <code>AlarmManager</code> to pause playback automatically when the timer expires.</li>
+          <li><strong>Sleep Timer:</strong> If you enable the in-app Sleep Timer, ChillHub schedules a local device alarm to pause playback automatically when the timer expires.</li>
         </ul>
       </section>
 
       <section class="policy-section" id="section-8">
         <div class="section-header">
           <span class="section-index">8</span>
-          <h2>Third-Party APIs, Embedded Players &amp; External Services</h2>
+          <h2>Third-Party Services &amp; Embedded Players</h2>
         </div>
         <p>
-          To provide music search, album tracklists, artist pages, artwork, and streaming, ChillHub communicates directly from your device with external third-party services. ChillHub does not operate a proprietary backend server that collects user profiles.
+          To provide music search, album tracklists, artist pages, artwork, and streaming, ChillHub communicates directly from your device with external third-party music and media providers. ChillHub does not operate a proprietary backend server that collects user profiles.
         </p>
         <ul>
           <li>
-            <strong>JioSaavn Catalog Endpoints &amp; Community API Proxy:</strong> ChillHub queries JioSaavn web API endpoints (<code>www.jiosaavn.com</code>), an unofficial community-hosted JioSaavn-compatible endpoint (<code>jiosavan-coderaryan.vercel.app</code>), and JioSaavn media CDNs (<code>saavncdn.com</code>) to retrieve song, album, artist, and stream URL metadata. When queried, those servers receive your search terms, selected item IDs/URLs, and standard HTTP connection metadata (such as IP address).
+            <strong>JioSaavn-Compatible Music Catalog &amp; Media Delivery Services:</strong> ChillHub queries external JioSaavn-compatible catalog and media delivery services to retrieve song, album, artist, artwork, and audio stream information. When queried, those external services receive your search terms, selected item identifiers, and standard HTTP connection metadata (such as your IP address).
           </li>
           <li>
-            <strong>YouTube Data API v3 (Optional Configuration):</strong> When a YouTube API key is configured in the app build, ChillHub queries <code>www.googleapis.com/youtube/v3</code> with your search query, region code (<code>IN</code>), language preference, or video ID to locate music videos/tracks.
+            <strong>YouTube Catalog &amp; Metadata Services (Optional):</strong> When YouTube catalog search integration is enabled, ChillHub queries YouTube&rsquo;s catalog service with your search keywords, regional language/content preferences, or track identifiers to locate matching music tracks.
           </li>
           <li>
-            <strong>Embedded YouTube IFrame Player (WebView):</strong> When playing a YouTube-sourced track, ChillHub loads <code>https://www.youtube.com/iframe_api</code> inside an Android <code>WebView</code> with JavaScript and DOM storage enabled (<code>domStorageEnabled = true</code>). Inside that embedded player, YouTube/Google independently processes video requests, IP address, device/WebView metadata, and browser/DOM storage or cookies in accordance with Google&rsquo;s Privacy Policy and YouTube&rsquo;s Terms of Service.
+            <strong>Embedded YouTube Player:</strong> When playing a YouTube-sourced track, ChillHub loads an embedded YouTube player inside an Android WebView. Inside that embedded player, YouTube and Google independently process video playback requests, IP address, device browser metadata, and standard player storage or cookies in accordance with Google&rsquo;s Privacy Policy and YouTube&rsquo;s Terms of Service.
           </li>
           <li>
-            <strong>Coil Image Loader &amp; OkHttp / Retrofit:</strong> Open-source Android networking and image caching libraries running strictly inside the app to fetch and cache album/artist artwork and API responses.
+            <strong>On-Device Networking &amp; Image Caching Libraries:</strong> Open-source Android networking and image caching libraries run strictly inside the app to fetch and cache album/artist artwork and catalog metadata.
           </li>
           <li>
-            <strong>Lyrics Status:</strong> In the current version, ChillHub&rsquo;s lyrics provider is disabled locally and does not send track data to any external lyrics API.
+            <strong>Lyrics Status:</strong> ChillHub&rsquo;s lyrics provider is currently disabled locally and does not send track data to any external lyrics service.
           </li>
           <li>
-            <strong>Device Speech Recognition Service:</strong> Receives audio only when you explicitly tap Voice Search.
+            <strong>Device Speech Recognition Service:</strong> Receives voice audio only when you explicitly tap Voice Search.
           </li>
         </ul>
         <p>
-          Please note that external third-party APIs and embedded media players operate under their own independent privacy policies and terms. We recommend reviewing Google/YouTube&rsquo;s privacy disclosures and applicable provider policies for details on how they handle connection logs and cookies.
+          Please note that external third-party services and embedded media players operate under their own independent privacy policies and terms. We recommend reviewing Google and YouTube&rsquo;s privacy disclosures and applicable provider policies for details on how they handle connection logs and cookies.
         </p>
       </section>
 
@@ -916,10 +916,10 @@
           ChillHub stores user data locally on your device using standard Android storage mechanisms:
         </p>
         <ul>
-          <li><strong>Local Room SQLite Database (<code>chillhub_music.db</code>):</strong> Stores your favorites, custom playlists, playlist songs, recently played history, search history, local listening preferences, active playback queue, and app settings (including your optional display name).</li>
-          <li><strong>Artwork Disk Cache:</strong> Coil stores up to 50 MB of album and artist thumbnail images in the app&rsquo;s private cache folder (<code>chillhub_image_cache</code>).</li>
-          <li><strong>WebView Storage:</strong> Android&rsquo;s WebView cache and DOM storage are used by the embedded YouTube IFrame player during YouTube playback.</li>
-          <li><strong>Android Auto Backup:</strong> ChillHub&rsquo;s Android manifest includes <code>android:allowBackup="true"</code> with standard Android backup configuration files. Depending on your Android OS version and personal Google device backup settings, the Android operating system may back up app-private database data to your personal device backup account unless excluded or disabled in your device settings.</li>
+          <li><strong>Local App Database:</strong> Stores your favorites, custom playlists, playlist songs, recently played history, search history, local listening preferences, active playback queue, and app settings (including your optional display name) inside Android&rsquo;s private app storage.</li>
+          <li><strong>Artwork Disk Cache:</strong> ChillHub caches up to 50 MB of album and artist thumbnail images in the app&rsquo;s private cache directory.</li>
+          <li><strong>Embedded Player Storage:</strong> Android&rsquo;s WebView cache and browser storage are used by the embedded YouTube player during YouTube playback.</li>
+          <li><strong>Android Auto Backup:</strong> ChillHub allows standard Android OS device backup configuration. Depending on your device&rsquo;s operating system settings and personal Google device backup preferences, the Android operating system may back up app-private database data to your personal device backup account unless excluded or disabled in your device settings.</li>
         </ul>
       </section>
 
@@ -929,7 +929,7 @@
           <h2>Advertising, Analytics &amp; Tracking Disclosure</h2>
         </div>
         <p>
-          Based on ChillHub&rsquo;s verified codebase and build dependencies:
+          Based on ChillHub&rsquo;s verified implementation:
         </p>
         <ul>
           <li><strong>No Advertising SDKs:</strong> ChillHub displays no third-party ads and does not include AdMob or any ad mediation SDK.</li>
@@ -937,7 +937,7 @@
           <li><strong>No Cross-App Tracking:</strong> ChillHub does not request the Google Advertising ID (<code>AD_ID</code>) and does not track users across other apps or websites.</li>
         </ul>
         <p>
-          <em>Note regarding embedded YouTube playback:</em> Although ChillHub itself runs zero ad or analytics SDKs, loading an embedded YouTube IFrame WebView connects your device directly to YouTube, which independently manages its own embedded player telemetry and policies.
+          <em>Note regarding embedded YouTube playback:</em> Although ChillHub itself runs zero ad or analytics SDKs, loading an embedded YouTube player connects your device directly to YouTube, which independently manages its own embedded player telemetry and policies.
         </p>
       </section>
 
@@ -950,8 +950,8 @@
           Saavej Choudhary and DNS Creations do <strong>not</strong> sell, rent, trade, or share your personal information with data brokers, advertisers, or marketing networks. Data leaves your device only in the following strictly functional situations:
         </p>
         <ul>
-          <li><strong>Music &amp; Artwork Requests:</strong> Search queries and track/album/artist IDs sent directly from your device to JioSaavn endpoints, optional YouTube Data API, or YouTube&rsquo;s embedded IFrame player to play music and show artwork.</li>
-          <li><strong>Voice Search Transcription:</strong> Voice audio passed directly to your device&rsquo;s OS <code>SpeechRecognizer</code> provider when you tap the microphone icon.</li>
+          <li><strong>Music &amp; Artwork Requests:</strong> Search queries and track/album/artist identifiers sent directly from your device to JioSaavn-compatible services, YouTube catalog services, or YouTube&rsquo;s embedded player to play music and show artwork.</li>
+          <li><strong>Voice Search Transcription:</strong> Voice audio passed directly to your device&rsquo;s OS speech recognition provider when you tap the microphone icon.</li>
           <li><strong>User-Initiated Support Email:</strong> Messages you manually compose and send through your device&rsquo;s email application.</li>
         </ul>
       </section>
@@ -965,12 +965,12 @@
           ChillHub applies practical technical safeguards appropriate to a local-first music player:
         </p>
         <ul>
-          <li><strong>Encrypted Transport (HTTPS):</strong> Catalog, artwork, YouTube API, and embedded player requests use HTTPS endpoints.</li>
-          <li><strong>Private App Sandbox:</strong> Your Room database and image cache reside inside Android&rsquo;s private app storage directory, protected by OS sandboxing from other non-privileged apps.</li>
-          <li><strong>Release Build Logging Disabled:</strong> Network HTTP logging (<code>HttpLoggingInterceptor</code>) is strictly disabled (<code>Level.NONE</code>) in release builds, and sensitive headers/API keys are redacted in debug logs.</li>
+          <li><strong>Encrypted Transport (HTTPS):</strong> Catalog, artwork, and media requests use encrypted HTTPS connections.</li>
+          <li><strong>Private App Sandbox:</strong> Your local database and image cache reside inside Android&rsquo;s private app storage directory, protected by OS sandboxing from other non-privileged apps.</li>
+          <li><strong>Production Diagnostics Safeguards:</strong> Production release builds disable network request diagnostics so sensitive request details are not written to device logs.</li>
         </ul>
         <p>
-          <strong>Important Limitation:</strong> ChillHub&rsquo;s local Room database is not additionally encrypted at rest by a separate app-level encryption layer beyond standard Android device encryption, and no method of electronic storage or internet transmission can be guaranteed 100% secure.
+          <strong>Important Limitation:</strong> ChillHub&rsquo;s local database is not additionally encrypted at rest by a separate app-level encryption layer beyond standard Android device encryption, and no method of electronic storage or internet transmission can be guaranteed 100% secure.
         </p>
       </section>
 
@@ -988,7 +988,7 @@
           <li><strong>Permission Controls:</strong> You can grant or revoke Microphone (<code>RECORD_AUDIO</code>) and Notification (<code>POST_NOTIFICATIONS</code>) permissions at any time in Android App Settings.</li>
         </ul>
         <p>
-          ChillHub does not control server-side access log retention of independent third-party endpoints (such as JioSaavn endpoints, the community API proxy, or Google/YouTube services).
+          ChillHub does not control server-side access log retention of independent third-party music, artwork, or media providers.
         </p>
       </section>
 
@@ -1008,7 +1008,7 @@
           <h2>Changes to This Privacy Policy</h2>
         </div>
         <p>
-          We may update this Privacy Policy if ChillHub introduces new features, permissions, APIs, or storage practices, or to comply with applicable legal and Google Play policy requirements. Any updates will be reflected by revising the Effective Date at the top of this page. Continued use of ChillHub after an update takes effect constitutes acceptance of the revised Privacy Policy.
+          We may update this Privacy Policy if ChillHub introduces new features, permissions, external services, or storage practices, or to comply with applicable legal and Google Play policy requirements. Any updates will be reflected by revising the Effective Date at the top of this page. Continued use of ChillHub after an update takes effect constitutes acceptance of the revised Privacy Policy.
         </p>
       </section>
 
